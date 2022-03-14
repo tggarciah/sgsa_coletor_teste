@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fillViewport="true">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.activity.ImpressaoProdutoDetalheActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/impressao_produto_detalhe_textinputlayout_numero_pedido"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      app:layout_constraintEnd_toStartOf="@id/impressao_produto_detalhe_textinputlayout_solicitacao_id"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/impressao_produto_detalhe_numero_pedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Número do Pedido"
+        android:inputType="text"
+        android:textColor="@android:color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/impressao_produto_detalhe_textinputlayout_solicitacao_id"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/impressao_produto_detalhe_textinputlayout_numero_pedido"
+      app:layout_constraintTop_toTopOf="@id/impressao_produto_detalhe_textinputlayout_numero_pedido">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/impressao_produto_detalhe_solicitacao_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Cód. Solicitação"
+        android:inputType="text"
+        android:textColor="@android:color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/impressao_produto_detalhe_textinputlayout_cliente"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/impressao_produto_detalhe_textinputlayout_numero_pedido">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/impressao_produto_detalhe_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Cliente"
+        android:inputType="text"
+        android:textColor="@android:color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/impressao_produto_detalhe_textinputlayout_codigo_impressao"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      app:layout_constraintEnd_toEndOf="@id/impressao_produto_detalhe_textinputlayout_cliente"
+      app:layout_constraintStart_toStartOf="@id/impressao_produto_detalhe_textinputlayout_cliente"
+      app:layout_constraintTop_toBottomOf="@id/impressao_produto_detalhe_textinputlayout_cliente">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/impressao_produto_detalhe_codigo_impressao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Código de Impressão (Clichê)"
+        android:inputType="text"
+        android:textColor="@android:color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/impressao_produto_detalhe_textinputlayout_produto"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      app:layout_constraintEnd_toEndOf="@id/impressao_produto_detalhe_textinputlayout_cliente"
+      app:layout_constraintStart_toStartOf="@id/impressao_produto_detalhe_textinputlayout_cliente"
+      app:layout_constraintTop_toBottomOf="@id/impressao_produto_detalhe_textinputlayout_codigo_impressao">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/impressao_produto_detalhe_produto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Produto Acabado"
+        android:inputType="text"
+        android:textColor="@android:color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/impressao_produto_detalhe_textinputlayout_quantidade_pedido"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="16dp"
+      app:layout_constraintEnd_toStartOf="@id/impressao_produto_detalhe_textinputlayout_quantidade_restante"
+      app:layout_constraintStart_toStartOf="@id/impressao_produto_detalhe_textinputlayout_produto"
+      app:layout_constraintTop_toBottomOf="@id/impressao_produto_detalhe_textinputlayout_produto">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/impressao_produto_detalhe_quantidade_pedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Quantidade Total"
+        android:inputType="text"
+        android:textColor="@android:color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/impressao_produto_detalhe_textinputlayout_quantidade_restante"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      app:layout_constraintEnd_toEndOf="@id/impressao_produto_detalhe_textinputlayout_solicitacao_id"
+      app:layout_constraintStart_toEndOf="@id/impressao_produto_detalhe_textinputlayout_quantidade_pedido"
+      app:layout_constraintTop_toBottomOf="@id/impressao_produto_detalhe_textinputlayout_produto">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/impressao_produto_detalhe_quantidade_restante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Quantidade Restante"
+        android:inputType="text"
+        android:textColor="@android:color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/impressao_produto_detalhe_textinputlayout_lote"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toEndOf="@id/impressao_produto_detalhe_textinputlayout_cliente"
+      app:layout_constraintStart_toStartOf="@id/impressao_produto_detalhe_textinputlayout_cliente"
+      app:layout_constraintTop_toBottomOf="@id/impressao_produto_detalhe_textinputlayout_quantidade_pedido">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/impressao_produto_detalhe_lote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_action_photo_camera"
+        android:hint="Lote/Caixa"
+        android:inputType="text"
+        android:textColor="@android:color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

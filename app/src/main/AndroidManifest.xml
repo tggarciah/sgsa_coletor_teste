@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="br.com.dtfoods.sgsacoletor">
+
+  <uses-feature android:name="android.hardware.camera.any" />
+
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+  <application
+    android:name=".ui.SgsaColetorApplication"
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.SGSAColetorTeste"
+    android:usesCleartextTraffic="true">
+    <activity
+      android:name=".ui.activity.LoginActivity"
+      android:theme="@style/Theme.SGSAColetorTeste.NoActionBar"
+      android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity
+      android:name=".ui.activity.BarcodeScannerActivity"
+      android:exported="false" />
+    <activity
+      android:name=".ui.activity.ImpressaoProdutoClienteDetalheActivity"
+      android:exported="false" />
+    <activity
+      android:name=".ui.activity.ImpressaoProdutoClienteListaActivity"
+      android:exported="false" />
+    <activity
+      android:name=".ui.activity.UsuarioFormularioActivity"
+      android:exported="false" />
+    <activity
+      android:name=".ui.activity.UsuarioDetalheActivity"
+      android:exported="false" />
+    <activity
+      android:name=".ui.activity.UsuarioListaActivity"
+      android:exported="false" />
+  </application>
+</manifest>
